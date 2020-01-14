@@ -1,0 +1,10 @@
+body ,h2,p{margin: 0; padding: 0;}
+.box{width: 795px; margin: 0 auto;text-align: center;}
+.box img{margin-top: 58px;}
+.box h2{margin-top: 102px; font-size: 46px; }
+a{text-decoration: none; border: 1px solid black; display: block;font-size: 24px; line-height: 45px; width: 140px; border-radius: 22.5px; color: black;}
+.box p{font-size: 28px; }
+.box p:nth-of-type(1){margin: 34px 0;}
+.box p:nth-of-type(2){margin-bottom:78px; }
+.box div{display: flex; justify-content: center;}
+.box div a:nth-of-type(1){margin-right: 65px; }

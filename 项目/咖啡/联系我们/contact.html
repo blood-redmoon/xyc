@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=24dC7YK7E83GIGa3x61dLx7NIDOtuDhO"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+		<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+	</head>
+	<body>
+		<!--导航条-->
+		<nav>
+			<div class="nav">
+				<img src="images/a1.png"/>
+				<ul>
+					<li><a href="../首页/index.html">首页</a></li>
+					<li><a href="../关于我们/company.html">关于我们</a></li>
+					<li><a href="../产品展示/product.html">产品介绍</a></li>
+					<li><a href="../团队/team.html">我们团队</a></li>
+					<li><a href="../联系我们/contact.html">联系我们</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--图片-->
+		<div class="img">
+			<img src="images/a2.png"/>
+		</div>
+		<!--联系我们-->
+		<main>
+			<div class="main_top">
+				<div></div>
+				<div>
+					<h3>联系我们</h3>
+					<p>Company profile</p>
+				</div>
+				<p>当前位置><span>首页></span>>联系我们</p>
+			</div>
+			<div class="main_bottom">
+				<div id="allmap"></div>
+				<div class="main_bottom3">
+					<div>
+						<img  src="images/a16.png"/>
+						<div class="main_bottom2">
+							<div class="main_bottom1">
+								<div></div>
+								<p>咨询热线</p>
+							</div>
+							<p>Information Hotline</p>
+							<p>重庆：+86023-867-7848</p>
+							<p>(09：30~18：30北京时间)</p>
+						</div>
+					</div>
+					<div>
+						<img  src="images/a17.png"/>
+						<div class="main_bottom2">
+							<div class="main_bottom1">
+								<div></div>
+								<p>公司地址</p>
+							</div>
+							<p>Company address</p>
+							<p>地址：重庆大坪龙湖时代天街3号写字楼2407室</p>
+							<p>(09：30~18：30北京时间)</p>
+						</div>
+					</div>
+					<div>
+						<img  src="images/a18.png"/>
+						<div class="main_bottom2">
+							<div class="main_bottom1">
+								<div></div>
+								<p>公司邮箱</p>
+							</div>
+							<p>E-mail</p>
+							<p>邮箱：info@haitouglobal.com</p>
+							<p>(09：30~18：30北京时间)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<div class="footer">
+			<div class="footer1">
+				<p>Copyright © 重庆duzu有限公司 | duzu备案号 33010602001878 号 版权所有：重庆戈登有限公司</p>
+				<img src="images/a19.png" />
+			</div>
+		</div>
+		
+		
+		
+		<script type="text/javascript">
+			// 百度地图API功能
+		    var map = new BMap.Map('allmap');
+		    var poi = new BMap.Point(106.4912613060,29.5378179960);
+		    map.centerAndZoom(poi, 19);
+		    map.enableScrollWheelZoom();
+		
+		    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+		                    '<img src="a3.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+		                    '地址：重庆大西洋国际12-1<br/>电话：023-888888<br/>简介：来千锋走上人生巅峰' +
+		                  '</div>';
+		
+		    //创建检索信息窗口对象
+		    var searchInfoWindow = null;
+			searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+					title  : "大西洋国际",      //标题
+					width  : 290,             //宽度
+					height : 105,              //高度
+					panel  : "panel",         //检索结果面板
+					enableAutoPan : true,     //自动平移
+					searchTypes   :[
+						BMAPLIB_TAB_SEARCH,   //周边检索
+						BMAPLIB_TAB_TO_HERE,  //到这里去
+						BMAPLIB_TAB_FROM_HERE //从这里出发
+					]
+				});
+		    var marker = new BMap.Marker(poi); //创建marker对象
+		    marker.addEventListener("click", function(e){
+			    searchInfoWindow.open(marker);
+		    })
+		    map.addOverlay(marker); //在地图中添加marker
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+body,ul,h2,p,h3{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{vertical-align: top;}
+/*导航条*/
+.nav{width: 1200px; margin: 0 auto; overflow: hidden;}
+.nav img{float: left; margin-left: 46px;}
+.nav ul{float: right;}
+.nav ul li{float: left; width: 121px; text-align: center; margin-right: 20px;}
+.nav ul li a{display: block; line-height: 74px; font-size: 20px; color: #333333;}
+.nav ul li:hover{border-bottom: 6px solid #866961;}
+.nav ul li:hover a{color: #866961;}
+/*第二部分*/
+.img img{width: 100%;}
+/*团队介绍*/
+main{width: 1200px; margin: 0 auto; margin-bottom: 40px;}
+.main_top{width: 996px; display: flex;border-bottom: 1px solid #866961; margin: 37px  auto 25px auto;}
+.main_top div:nth-of-type(1){height: 9px; border: 1px solid #866961; width: 0px; margin-top: 7px; margin-right: 7px;}
+.main_top div h3{font-size: 16px;}
+.main_top div p{color: #866961; font-size: 12px; margin-left: -8px;}
+.main_top>p{margin-left: 727px; font-size: 14px; margin-top: 12px;}
+.main_top>p span{color: #a9a9a9;}
+.main_bottom{display: flex; margin-left: 102px; margin-bottom: 37px;}
+.main_bottom>div:nth-of-type(2){width: 597px; color: #a9a9a9;}
+.main_bottom1{margin-left: 24px;}
+.main_bottom1>p:nth-of-type(1){font-size: 16px; margin-bottom: 8px; color: black;}
+.main_bottom1>p:nth-of-type(1) span{font-size: 12px;}
+.main_bottom1>p:nth-of-type(2){font-size: 14px; margin-bottom: 25px; }
+.main_bottom1>p:nth-of-type(3){font-size: 14px; line-height: 24px; margin-bottom: 25px;text-align: justify;}
+.main_bottom1>p:nth-of-type(4){font-size: 14px; line-height: 24px; margin-bottom: 40px;text-align: justify;}
+.main_bottom2{display: flex;}
+.main_bottom2 div div{width: 143px; height: 72px; border: 1px solid #000000; border-top: none;}
+.main_bottom2 div p{text-align: center;}
+.main_bottom2 div p:nth-of-type(1){padding: 10px 0;}
+.main_bottom2 div:nth-of-type(2){margin: 0 5px;}
+.main_bottom2 div:nth-of-type(3){margin-right:5px;}
+.main_bottom2 div:hover{background: #333;}
+/*尾部*/
+.footer{background: #866961;}
+.footer1{width: 1200px; margin: 0 auto;display: flex;} 
+.footer1 p{margin:40px 0 26px 68px ;}
+.footer1 img{width: 97px; height: 42px; margin: 22px 0 0 182px;}

@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="lunbozuofangun" unicode="&#59319;" d="M228.894 450.259l427.67 427.67c24.095 24.095 60.236 24.095 84.33 0 24.094-24.094 24.094-60.235 0-84.329L355.388 408.094l385.506-385.506c24.094-24.094 24.094-60.235 0-84.33-24.094-24.093-60.235-24.093-84.33 0L228.895 365.93c-12.047 12.047-18.07 30.118-18.07 42.165 0 18.07 6.023 30.118 18.07 42.165z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="lunboyoufangun" unicode="&#59325;" d="M740.894 450.259l-427.67 427.67c-24.095 24.095-60.236 24.095-84.33 0-24.094-24.094-24.094-60.235 0-84.329L614.4 408.094 228.894 22.588c-24.094-24.094-24.094-60.235 0-84.33 24.094-24.093 60.235-24.093 84.33 0l427.67 427.671c12.047 12.047 18.07 30.118 18.07 42.165 0 18.07-6.023 30.118-18.07 42.165z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
